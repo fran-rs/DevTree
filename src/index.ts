@@ -1,18 +1,7 @@
-// const express = require('express') // CJS Common JS
-import express from 'express' // ESM Ecmascript modules
+import server from "./server"
 
-const app = express()
+ const port = process.env.PORT ||  4000  
 
-// Routing
-
-app.get('/', (req, res) =>{
-    res.send('Hola Mundo en Express / TypeScript')
-}) 
-
- const port = process.env.PORT ||  4000
- 
-
-
-app.listen(port, () => {
+server.listen(port, () => {
     console.log('Servidor Funcionanado en el puerto:', port)
 })
