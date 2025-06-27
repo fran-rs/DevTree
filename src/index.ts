@@ -11,10 +11,16 @@ let productName = "Tablet"
 let isAuth = false
 let price = 30
 
-interface Product  {
+type Product = {
     id: number
     price: number
     name: string
+}
+
+type ProductID = Pick<Product, 'id'>
+
+let product3 : ProductID = {
+    id: 1
 }
 
 let product : Product = {
