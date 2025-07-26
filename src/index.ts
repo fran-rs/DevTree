@@ -5,4 +5,3 @@ import server from "./server"
 server.listen(port, () => {
     console.log( colors.cyan.bold( `Servidor Funcionanado en el puerto: ${port} `) )
 })
-
